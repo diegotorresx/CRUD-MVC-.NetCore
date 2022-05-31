@@ -1,0 +1,22 @@
+﻿@model GirosModel
+@{
+    ViewData["Title"] = "DeleteGiros";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+  <div class="card-header">
+    Eliminar Giro
+  </div>
+  <div class="card-body">
+    <form asp-action="DeleteGiros" asp-controller="CrudGiros" method="post">
+        <input asp-for="GIR_GIRO_ID" type="hidden" class="form-control">
+        <div class="alert alert-danger" role="alert">
+          ¿Desea eliminar el giro: @Html.DisplayTextFor(m => m.GIR_RECIBO) ?
+        </div>
+      <button type="submit" class="btn btn-danger">Eliminar</button>
+      <a asp-action="SelectGiros" asp-controller="CrudGiros" class="btn btn-warning">Volver a la lista de Paises</a>
+    </form>
+  </div>
+</div>
+

@@ -1,0 +1,38 @@
+﻿@model List<PaisesModel>
+@{
+    ViewData["Title"] = "SelectPaises";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="card">
+  <div class="card-header">
+    Listar Paises
+  </div>
+  <div class="card-body">
+    <a asp-action="Insert" asp-controller="CrudPaises" class="btn btn-success">Insertar un país nuevo</a>
+  </div>
+  <hr />
+  <table class="table table-bordered">
+      <thead>
+          <tr>
+              <th>ID</th>
+              <th>PAIS</th>
+              <th></th>
+          </tr>
+      </thead>
+      <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                  <td>@item.id_pais</td>
+                  <td>@item.nombre</td>
+                  <td>
+                      <a asp-action="UpdatePaises" asp-controller="CrudPaises" class="btn btn-primary btn-sm" asp-route-id_pais="@item.id_pais">Editar</a>
+                      <a asp-action="DeletePaises" asp-controller="CrudPaises" class="btn btn-danger btn-sm" asp-route-id_pais="@item.id_pais">Eliminar</a>
+                  </td>
+                </tr>
+            }
+        </tbody>
+  </table>
+</div>

@@ -1,0 +1,24 @@
+﻿@model PaisesModel
+@{
+    ViewData["Title"] = "UpdatePaises";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="card">
+  <div class="card-header">
+    Editar País
+  </div>
+  <div class="card-body">
+    <form asp-action="UpdatePaises" asp-controller="CrudPaises" method="post">
+        <input asp-for="id_pais" type="hidden" class="form-control">
+      <div class="mb-3">
+        <label class="form-label">Nombre del País</label>
+        <input asp-for="nombre" type="text" class="form-control">
+        <span asp-validation-for="nombre" class="text-danger"></span>
+        <div id="paisHelp" class="form-text">Si el país no existe, este no se actualizará</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <a asp-action="SelectPaises" asp-controller="CrudPaises" class="btn btn-warning">Volver a la lista de Paises</a>
+    </form>
+  </div>
+</div>
+

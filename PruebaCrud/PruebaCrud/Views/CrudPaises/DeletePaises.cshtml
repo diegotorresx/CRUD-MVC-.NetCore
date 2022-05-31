@@ -1,0 +1,22 @@
+﻿@model PaisesModel
+@{
+    ViewData["Title"] = "DeletePaises";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+  <div class="card-header">
+    Eliminar País
+  </div>
+  <div class="card-body">
+    <form asp-action="DeletePaises" asp-controller="CrudPaises" method="post">
+        <input asp-for="id_pais" type="hidden" class="form-control">
+        <div class="alert alert-danger" role="alert">
+          ¿Desea eliminar el País: @Html.DisplayTextFor(m => m.nombre) ?
+        </div>
+      <button type="submit" class="btn btn-danger">Eliminar</button>
+      <a asp-action="SelectPaises" asp-controller="CrudPaises" class="btn btn-warning">Volver a la lista de Paises</a>
+    </form>
+  </div>
+</div>
+

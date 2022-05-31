@@ -1,0 +1,30 @@
+﻿@model GirosModel
+@{
+    ViewData["Title"] = "InsertGiros";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+  <div class="card-header">
+    Insertar Giro
+  </div>
+  <div class="card-body">
+    <form asp-action="InsertGiros" asp-controller="CrudGiros" method="post">
+      <div class="mb-3">
+        <label class="form-label">Giro recibido</label>
+        <input asp-for="GIR_RECIBO" type="text" class="form-control">
+        <span asp-validation-for="GIR_RECIBO" class="text-danger"></span>
+        <div id="ciudadHelp" class="form-text">Si el giro existe, este no se insertará</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Id de la ciudad</label>
+        <input asp-for="GIR_CIUDAD_ID" type="number" class="form-control">
+        <span asp-validation-for="GIR_CIUDAD_ID" class="text-danger"></span>
+        <div id="giroID" class="form-text">Insertar el ID del país a la que corresponde la ciudad</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <a asp-action="SelectGiros" asp-controller="CrudGiros" class="btn btn-warning">Volver a la lista de Giros</a>
+    </form>
+  </div>
+</div>
+

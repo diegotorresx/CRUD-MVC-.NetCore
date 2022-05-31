@@ -1,0 +1,90 @@
+﻿@model DropListModel
+
+@{
+    ViewData["Title"] = "SelectGiros";
+    bool validation = ViewBag.Validation;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!--Scripts de JQuery para generar la comunicación con el controlador cuando se seleccióna algún elemento en los dropdownlist-->
+@section scripts{
+    <script type="text/javascript">
+        $(function(){
+            $("#paisesList").change(function(){
+                $("#paisesDropList").submit();
+            });
+        });
+        $(function(){
+            $("#ciudadesList").change(function(){
+                $("#ciudadesDropList").submit();
+            });
+        });
+    </script>
+}
+
+<!--Vista que contiene los giros, los filtros solicitados por DropDownList Y el Crud de los Giros-->
+<div class="card">
+  <div class="card-header">
+    Listar Giros
+  </div>
+  <div class="card-body">
+    <a asp-action="InsertGiros" asp-controller="CrudGiros" class="btn btn-success">Insertar un giro nuevo</a>
+    <hr />
+    <!--Creación el DopDownList paises y conexión con el cotrolador CrudGiros-->
+        @using (Html.BeginForm("SelectGiros","CrudGiros", FormMethod.Post, new { @id = "paisesDropList" }))
+        {
+            <p>
+                <label>Paises</label>
+                @Html.DropDownListFor(x => x.paisesSelectList, Model.paisesSelectList, "Seleccionar un país", new { @id="paisesList", @class="form-control", @Name="_listPaises"})
+            </p>
+        }
+    <hr />
+        @if(validation == true)
+        {
+             <!--Creación el DopDownList ciudades y conexión con el cotrolador CrudGiros-->
+            @using (Html.BeginForm("SelectGiros","CrudGiros", FormMethod.Post, new { @id = "ciudadesDropList" }))
+            {
+                <p>
+                    <label>Ciudades</label>
+                    @Html.DropDownListFor(x => x.ciudadesSelectList, Model.ciudadesSelectList, "Seleccionar una ciudad", new { @id="ciudadesList", @class="form-control",@Name="_listCiudades"})
+                </p>
+            }
+        }
+        
+    <hr />
+  </div>
+  <hr />
+  <!--Creación de tabla ara mostrar los giros-->
+  <table class="table table-bordered">
+      <thead>
+          <tr>
+              <th>ID</th>
+              <th>GIRO</th>
+              <th>ID CIUDAD</th>
+              <th></th>
+          </tr>
+      </thead>
+      <tbody>
+            @{int count = 0;}
+            <!--Iteración que permite solo mostrar máximo 4 gitos en la tabla-->
+            @foreach (var item in Model._listGiros)
+            {
+                <tr>
+                  <td>@item.GIR_GIRO_ID</td>
+                  <td>@item.GIR_RECIBO</td>
+                  <td>@item.GIR_CIUDAD_ID</td>
+                  <td>
+                      <a asp-action="UpdateGiros" asp-controller="CrudGiros" class="btn btn-primary btn-sm" asp-route-GIR_GIRO_ID="@item.GIR_GIRO_ID">Editar</a>
+                      <a asp-action="DeleteGiros" asp-controller="CrudGiros" class="btn btn-danger btn-sm" asp-route-GIR_GIRO_ID="@item.GIR_GIRO_ID">Eliminar</a>
+                  </td>
+                </tr>
+                if(count == 3){
+                    break;
+                }
+                count++;
+            }
+        </tbody>
+  </table>
+</div>
+

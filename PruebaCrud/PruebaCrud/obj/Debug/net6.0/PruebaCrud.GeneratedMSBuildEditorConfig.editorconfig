@@ -1,0 +1,80 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PruebaCrud
+build_property.RootNamespace = PruebaCrud
+build_property.ProjectDir = C:\Proyects\monica\MVC\PruenaIngreso\PruebaIngreso\PruebaCrud\PruebaCrud\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Proyects\monica\MVC\PruenaIngreso\PruebaIngreso\PruebaCrud\PruebaCrud
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/CrudCiudades/DeleteCiudades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZENpdWRhZGVzXERlbGV0ZUNpdWRhZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/CrudCiudades/InsertCiudades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZENpdWRhZGVzXEluc2VydENpdWRhZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/CrudCiudades/SelectCiudades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZENpdWRhZGVzXFNlbGVjdENpdWRhZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/CrudCiudades/UpdateCiudades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZENpdWRhZGVzXFVwZGF0ZUNpdWRhZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/CrudGiros/DeleteGiros.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZEdpcm9zXERlbGV0ZUdpcm9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/CrudGiros/InsertGiros.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZEdpcm9zXEluc2VydEdpcm9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/CrudGiros/SelectGiros.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZEdpcm9zXFNlbGVjdEdpcm9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/CrudGiros/UpdateGiros.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZEdpcm9zXFVwZGF0ZUdpcm9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/CrudPaises/DeletePaises.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZFBhaXNlc1xEZWxldGVQYWlzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/CrudPaises/Insert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZFBhaXNlc1xJbnNlcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/CrudPaises/SelectPaises.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZFBhaXNlc1xTZWxlY3RQYWlzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/CrudPaises/UpdatePaises.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3J1ZFBhaXNlc1xVcGRhdGVQYWlzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyects/monica/MVC/PruenaIngreso/PruebaIngreso/PruebaCrud/PruebaCrud/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9nnsnsx8ap

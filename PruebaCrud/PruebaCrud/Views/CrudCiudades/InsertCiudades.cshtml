@@ -1,0 +1,29 @@
+﻿@model CiudadesModel
+@{
+    ViewData["Title"] = "InsertCiudades";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+  <div class="card-header">
+    Insertar País
+  </div>
+  <div class="card-body">
+    <form asp-action="InsertCiudades" asp-controller="CrudCiudades" method="post">
+      <div class="mb-3">
+        <label class="form-label">Nombre de la ciudad</label>
+        <input asp-for="nombre" type="text" class="form-control">
+        <span asp-validation-for="nombre" class="text-danger"></span>
+        <div id="ciudadHelp" class="form-text">Si la ciudad existe, esta no se insertará</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Id del País</label>
+        <input asp-for="id_pais" type="number" class="form-control">
+        <span asp-validation-for="id_pais" class="text-danger"></span>
+        <div id="paisID" class="form-text">Insertar el ID del país a la que corresponde la ciudad</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <a asp-action="SelectCiudades" asp-controller="CrudCiudades" class="btn btn-warning">Volver a la lista de Ciudades</a>
+    </form>
+  </div>
+</div>
